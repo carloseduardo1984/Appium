@@ -1,5 +1,9 @@
 # Appium
+![Badge em Desenvolvimento](http://img.shields.io/static/v1?label=STATUS&message=EM%20DESENVOLVIMENTO&color=GREEN&style=for-the-badge)
+
 Appium with Selenium and Android Studio
+
+![APP](https://user-images.githubusercontent.com/33332202/174480713-51108b98-0cce-4e45-81df-a43bfdf29fe3.jpg)
 
 Steps to use Appium from  Mobile Test Validations
 ==================================================
