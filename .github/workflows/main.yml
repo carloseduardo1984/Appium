@@ -15,9 +15,3 @@ jobs:
 
       - name: Do some work
         run: echo $GITHUB_SHA
-
-      # If job finished successfully, remove the workflow file (and tag if necessary)
-      - name: Remove scheduled job
-        uses: cardinalby/unschedule-job-action@v1
-        with:
-          ghToken: ${{ secrets.WORKFLOWS_TOKEN }} 
