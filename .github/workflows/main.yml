@@ -4,12 +4,13 @@ on:
     branches:
       - main
   schedule:
-    - cron: "2 * * * *"
+  #RUN  AT 5 AM EVERY WEEK DAY FROM MONDAY TO FRIDAY
+    - cron: '0 5 * * 1-5'
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v1
     - name: Running
-      run: |
+      run: | 
         echo "Running!"
