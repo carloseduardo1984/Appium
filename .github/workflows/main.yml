@@ -1,17 +1,21 @@
 # This is a basic workflow to help you get started with Actions
 
 name: "example-cron-action"
+
 on:
   schedule:
-    - cron:  '*/2 * * * *'    # At every 15th minute
+    - cron:  "*/5 * * * *"    # At every 5 minutes
 
 jobs:
-  singleJobName:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v2
-        with:
-          ref: ${{ env.DELAYED_JOB_CHECKOUT_REF }} # SHA that triggered your original job 
+  build:
 
-      - name: Do some work
-        run: echo $GITHUB_SHA
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: actions/checkout@v1
+    - name: Run a one-line script
+      run: echo Hello, world!
+    - name: Run a multi-line script
+      run: |
+        echo Add other actions to build,
+        echo test, and deploy your project.
