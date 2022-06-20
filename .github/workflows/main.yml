@@ -1,4 +1,4 @@
-name: Master
+name: Trigger Action with cron
 on:
   push:
     branches:
